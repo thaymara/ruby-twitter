@@ -1,0 +1,10 @@
+<%= render 'tweets/new' %>
+<ul>
+<% @tweets.each do |tweet| %>
+    <li>
+        <h2><%= tweet.name %></h2>
+        <p><%= tweet.body %></p>
+        <p><%= tweet.created_at %></p>
+    </li>
+<% end %>
+</ul>
